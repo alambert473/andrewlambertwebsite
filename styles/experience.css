@@ -1,0 +1,281 @@
+.experience {
+    min-height: 100svh;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencetitlecontainer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencetitle {
+    margin-top: 30px;
+    color: var(--whitecolor);
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    opacity: 0;
+}
+
+.experience-titleanim {
+    animation-name: experiencetitleanimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes experiencetitleanimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    } 
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experience-line {
+    height: 2.5px;
+    width: 430px;
+    background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
+    display: block;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.experience-lineanim {
+    animation-name: experiencelineanimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes experiencelineanimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    } 
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experiencemain {
+    display: grid;
+    grid-template-columns: 580px 580px;
+    column-gap: 300px;
+    position: relative;
+}
+
+.black-div-animation {
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    left: -5%;
+    background-color: rgb(16, 16, 16);
+    height: 100%;
+    z-index: 50;
+}
+
+.animateblackdiv {
+    animation-name: blackdivanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes blackdivanimation {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0%;
+    }
+}
+
+.education-title, .experience-title {
+    color: var(--whitecolor);
+    font-size: 2rem;
+}
+
+.education-section, .experience-section {
+    position: relative;
+}
+
+.educationcontainer {
+    width: 100%;
+    height: 110px;
+    background-color: var(--whitecolor);
+    border-radius: 15px;
+    padding: 10px 20px 30px;
+    position: relative;
+}
+
+.educationinsidetitle {
+    color: var(--redcolor);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .75rem;
+}
+
+.educationsectiondesc {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.schooltext {
+    margin-top: -2px;
+    margin-bottom: 0;
+    font-size: .75rem;
+    font-weight: 550;
+    color: rgb(137, 137, 137);
+}
+
+.educationinfo {
+    font-size: .7rem;
+    margin-top: 0px;
+    width: 450px;
+    margin-bottom: 0;
+}
+
+.line-down {
+    position: absolute;
+    left: -43px;
+    top: 0;
+}
+
+.red-line {
+    height: 180px;
+    width: 3px;
+    background-color: var(--redcolor);
+}
+
+.linedowncircle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: var(--whitecolor);
+    top: 0;
+    left: -49px;
+    border-radius: 50%;
+}
+
+.addeducationmargin {margin-top: 40px;}
+
+@media (max-width: 1600px) { 
+    .experiencemain {
+        grid-template-columns: 510px 510px;
+        column-gap: 250px;
+    }
+}
+
+@media (max-width: 1450px) {.experiencemain {grid-template-columns: 450px 450px;}}
+
+@media (max-width: 1330px) {
+    .experiencemain {
+        grid-template-columns: 420px 420px;
+        column-gap: 240px;
+    }
+    .educationcontainer {padding-bottom: 30px;}
+    .educationinsidetitle {font-size: .7rem;}
+    .schooltext {font-size: .65rem;}
+    .educationsectiondesc {font-size: .9rem;}
+    .educationinfo{
+        font-size: .7rem;
+        width: 420px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .black-div-animation {
+        bottom: -13%;
+        height: 110%;
+        left: -6%;
+    }
+    .experiencemain {
+        grid-template-columns: 340px 340px;
+        column-gap: 200px;
+    }
+    .educationinsidetitle {font-size: .6rem;}
+    .schooltext {font-size: .55rem;}
+    .educationsectiondesc {font-size: .8rem;}
+    .educationinfo{
+        width: 430px;
+        font-size: .65rem;
+        width: 350px;
+        margin-top: 0px;
+        
+    }
+    .educationcontainer {padding-bottom: 25px;}
+}
+
+@media (max-width: 1020px) {
+    .black-div-animation {right: -7%;}
+    .experiencemain {
+        grid-template-columns: 250px 250px;
+        column-gap: 150px;
+    }
+    .educationinfo{
+        width: 260px;
+        font-size: .6rem;
+        margin-top: 0px;
+        font-weight: 500;
+    }
+    .experiencetitle {font-size: 2.5rem;}
+    .experience-line {width: 300px;}
+    .education-title, .experience-title {font-size: 1.8rem;}
+    .line-down {left: -20px;}
+    .linedowncircle {left: -26px;}
+    .educationcontainer {padding-bottom: 27px;}
+}
+
+@media (max-width: 790px) {
+    .black-div-animation {
+        right: -14%;
+        left: -10%;
+        bottom: -24%;
+        height: 120%;
+    }
+    .experiencemain {
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px 450px;
+    }
+}
+
+
+@media(max-width: 455px) {
+    .black-div-animation {
+        right: -2%;
+        left: -8%;
+    }
+    .educationcontainer {width: 300px;}
+}
+
+@media(max-width: 400px) {
+    .black-div-animation {left: -10%;}
+    .educationcontainer {width: 260px;}
+    .educationinfo{
+        width: 250px;
+        font-size: .55rem;
+    }
+}
+
+@media(max-width: 360px) {
+    .black-div-animation {left: -10.5%;}
+    .educationinfo {line-height: 12px;}
+    .educationcontainer {width: 210px;}
+    .educationinfo{width: 210px;}
+}

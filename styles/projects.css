@@ -1,0 +1,284 @@
+.projects { /* part of experience page */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.projects-title {
+    color: var(--whitecolor);
+    font-size: 3rem;
+    margin-bottom: 5px;
+    text-align: center;
+    opacity: 0;
+}
+
+.projects-titleanim {
+    animation-name: projectstitlesectionanimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes projectstitlesectionanimation {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.projects-line {
+    height: 2.5px;
+    width: 400px;
+    background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
+    display: block;
+    border-radius: 15px;
+    opacity: 0;
+
+}
+
+.projects-lineanim {
+    animation-name: projectslineanimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes projectslineanimation {
+    from {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.under-line-desc { opacity: 0;}
+
+.under-line-descanim {
+    animation-name: underlinesdescanimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underlinesdescanimation {
+    from {
+        transform: translateX(-190%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image-section {
+    width: 470px;
+    height: 325px;
+    overflow: hidden;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5); /* Inset shadow */
+    position: relative;
+    border-top-left-radius: 39px;
+    border-top-right-radius: 39px;
+}
+
+.img-shadow {
+    position: absolute;
+    height: 325px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 39px;
+    border-top-right-radius: 39px;
+    box-shadow: inset 0px 4px 100px rgba(15, 15, 15, 0.7);
+}
+
+.allinoneimage {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5); /* Inset shadow */
+}
+
+.projects-containers {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    margin-bottom: 200px;
+    margin-top: 60px;
+    background-image: linear-gradient(to right, rgba(41, 41, 41, 0.7), rgba(65, 65, 65, .5));
+    padding: 0px 0px 34px 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform .5s, box-shadow .5s;
+}
+
+.projects-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 40px rgba(255, 0, 0, .8);
+}
+
+.projects-desc-title{
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.projects-desc-info {
+    margin-top: 5px;
+    color: rgb(196, 196, 196);
+    margin-left: 20px;
+    font-size: .8rem;
+    margin-bottom: 22px;
+}
+
+.projects-desc a {
+    margin-left: 20px;
+    color: var(--whitecolor);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: rgb(188, 53, 53);
+}
+
+.firstproject-container, .secondproject-container, .thirdproject-container {opacity: 0;}
+
+.firstproject-containeranim {
+    animation-name: projectcontaineranimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
+.secondproject-containeranim {
+    animation-name: projectcontaineranimation;
+    animation-duration: .35s;
+    animation-delay: .15s;
+    animation-fill-mode: forwards;
+}
+
+.thirdproject-containeranim {
+    animation-name: projectcontaineranimation;
+    animation-duration: .35s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes projectcontaineranimation {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1600px) { 
+    .projects-container {width: 410px;}
+    .image-section {width: 410px;}
+}
+
+@media(max-width: 1350px) {
+    .projects-container {width: 340px;}
+    .image-section {width: 340px;}
+    .projects-desc-title{font-size: .9rem;}
+    .projects-desc-info{
+        width: 310px;
+        font-size: .6rem;
+    }
+    .projects-desc a {
+        font-size: .7rem;
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects-container {width: 300px;}
+    .image-section {width: 300px;}
+    .projects-desc-info{width: 280px;}
+}
+
+@media (max-width: 1020px) {
+    .projects-container {width: 250px;}
+    .image-section {width: 250px;}
+    .projects-desc-title{font-size: .8rem;}
+    .projects-desc-info{width: 220px;}
+}
+
+@media (max-width: 890px) {
+    .projects-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-container {
+        width: 500px;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 40px rgba(210, 18, 18, 0.8);
+    }
+    .image-section {width: 500px;}
+    .projects-desc-title{font-size: 1.2rem;}
+    .projects-desc-info{
+        width: 420px;
+        font-size: 1rem;
+    }
+    .projects-desc a {
+        font-size: 1rem;
+        padding: 5px 8px;
+    }
+    .pc-addmargin {margin-bottom: 150px;}
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        width: 380px;
+        margin-top: 10px;
+    }
+    .image-section {width: 380px;}
+    .projects-desc-title{font-size: 1rem;}
+    .projects-desc-info{
+        width: 350px;
+        font-size: .8rem;
+    }
+    .projects-desc a {font-size: .9rem;}
+    .pctop-margin {margin-top: 100px;}
+    .under-line-desc {width: 400px;}
+}
+
+@media(max-width: 500px) {
+    .experience{background-color: rgb(11, 11, 11);}
+    .black-div-animation{background-color: rgb(11, 11, 11);}
+}
+
+@media(max-width: 455px) {
+    .projects-title {font-size: 2rem;}
+    .projects-line {width: 230px;}
+    .under-line-desc {width: 95%;}
+    .projects-container {width: 90%;}
+    .image-section {width: 100%;}
+    .projects-desc-info{width: 90%;}
+}
+
+@media(max-width: 370px) {
+    .educationcontainer {width: 80%;}
+}

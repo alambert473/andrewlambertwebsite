@@ -1,0 +1,187 @@
+.Aboutme {
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(16, 16, 16);
+}
+
+.left-about-section {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-picture {
+    height: 750px;
+    border-radius: 50px;
+    margin-left: 90px;
+    opacity: 0;
+}
+
+.aboutme-pictureAnimation {
+    animation-name: profilepictureAnimation;
+    animation-duration: .35s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes profilepictureAnimation {
+    0% {
+        transform: translateX(-120%);
+        opacity: 0;
+    } 
+    50% {
+        opacity: .5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.aboutme-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--whitecolor);
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.aboutme-title::after{
+    content: '';
+    height: 2.5px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, rgb(166, 0, 0) 5%, red, rgb(166, 0, 0));
+    border-radius: 10px;
+    display: block;
+}
+
+.aboutme-desc {
+    color: var(--whitecolor);
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.right-about-section {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-about-section div {
+    width: 800px;
+    opacity: 0;
+
+}
+
+.right-about-sectionAnimation {
+    animation-name: aboutsectionrightAnimation;
+    animation-duration: .35s;
+    animation-delay: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutsectionrightAnimation {
+    0% {
+        transform: translateX(120%);
+        opacity: 0;
+    } 
+    50% {
+        opacity: .7;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1450px)  {
+    .aboutme-picture {
+        margin-left: 50px;
+        height: 650px;
+    }
+    .aboutme-title {font-size: 2.3rem;}
+    .aboutme-desc {font-size: .8rem;}
+    .right-about-section div {width: 760px;}
+}
+
+@media (max-width: 1300px) {
+    .aboutme-picture {height: 630px;}
+    .aboutme-title {font-size: 2.5rem;}
+    .aboutme-desc {
+        font-size: .75rem;
+        line-height: 23px;
+    }
+    .right-about-section div {width: 620px;}
+}
+
+@media (max-width: 1160px) {
+    .aboutme-picture {
+        height: 600px;
+        margin-left: 25px;
+    }
+    .aboutme-title {font-size: 2.5rem;}
+    .aboutme-desc {
+        font-size: .6rem;
+        line-height: 20px;
+    }
+    .right-about-section div {width: 480px;}
+}
+
+@media (max-width: 900px) {
+    .aboutme-picture {
+        height: 550px;
+        margin-left: 40px;
+    }
+    .aboutme-desc {
+        font-size: .5rem;
+        font-weight: 500;
+        line-height: 15px;
+    }
+    .right-about-section div {width: 350px;}
+}
+
+@media (max-width: 790px) {
+    .Aboutme {grid-template-columns: 1fr;}
+    .left-about-section {display: none;}
+    .right-about-sectionAnimation {animation-delay: 0s;}
+    .aboutme-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutme-desc {
+        font-size: .9rem;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+    }
+    .right-about-section {align-items: start;}
+    .right-about-section div {width: 90%;}
+    .aboutme-title::after{
+        height: 2.5px;
+        width: 250px;
+        background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .aboutme-title {font-size: 2.1rem;}
+    .aboutme-desc {
+        font-size: .85rem;
+        font-weight: 500;
+        line-height: 23px;
+    }
+    .right-about-section div {width: 85%;}
+}
+
+@media(max-width: 500px) {.Aboutme{background-color: rgb(11, 11, 11);}}
+@media (max-width: 455px) {.right-about-section div {width: 80%;}}

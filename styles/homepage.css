@@ -1,0 +1,399 @@
+.home {
+    min-height: 100svh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-section {
+    margin-top: 140px;
+    margin-left: 70px;
+    opacity: 0;
+}
+
+.text-section-anim {
+    animation-name: textsectionanimation;
+    animation-duration: .3s; 
+    animation-fill-mode: forwards;
+}
+
+.text-section-anim-leave {
+    animation-name: textsectionanimation;
+    animation-duration: .6s; 
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textsectionanimation {
+    from {
+        transform: translate3d(-20%, 50%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.first-line {
+    color: var(--whitecolor);
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.second-line {
+    font-size: 3.5rem;
+    color: var(--redcolor);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.third-line {
+    color: var(--whitecolor);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+.third-line span {font-weight: bold;}
+.descritpion {width: 700px;}
+
+.descritpion p {
+    color: var(--whitecolor);
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-top: 3px;
+}
+
+.hireme-button {
+    font-weight: 500;
+    background-color: var(--redcolor);
+    border: 0;
+    color: var(--whitecolor);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: padding .5s, background-color .5s;
+    position: relative;
+    top: 10px;
+}
+
+.hireme-button:hover {
+    padding: 14px 34px;
+    background-color: rgb(213, 62, 62);
+    color: white;
+}
+
+.right-home-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+}
+
+.home-image-container {
+    margin-top: 150px;
+    background-image: linear-gradient(to right, var(--redcolor) 10%, rgb(105, 28, 19));
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 450px;
+    height: 750px;
+    transform: translateX(0);
+    opacity: 0;
+}
+
+.home-image-container-anim {
+    animation-name: righthomeanimation;
+    animation-duration: .3s; 
+    animation-fill-mode: forwards;
+}
+
+.home-image-container-anim-leave {
+    animation-name: righthomeanimation;
+    animation-direction: reverse;
+    animation-duration: .8s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes righthomeanimation {
+    from {
+        transform: translateX(160%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.profile-picture {
+    height: 650px;
+    border-radius: 40px;
+    box-shadow: 1px 3px 5px black;
+    margin-left: -200px;
+}
+
+@media (max-width: 1600px) {
+    .home-image-container { 
+        width: 400px;
+        height: 700px;
+    }
+    .profile-picture {height: 600px;}
+    .first-line {font-size: 1.3rem;}
+    .second-line {font-size: 3.3rem;}
+    .third-line {font-size: 1.6rem;}
+    .descritpion p{
+        font-size: 1rem;
+        line-height: 26px;
+    }
+    .hireme-button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1450px) {
+    .home-image-container { 
+        width: 360px;
+        height: 660px;
+    }
+    .profile-picture {height: 560px;}
+    .first-line {
+        font-size: 1.2rem;
+        position: relative;
+        top: 10px;
+    }
+    .second-line {
+        font-size: 3.2rem;
+        margin: 0;
+        height: 65px;
+    }
+    .third-line {font-size: 1.5rem;}
+    .descritpion{
+        font-size: .9rem;
+        line-height: 23px;
+        width: 600px;
+    }
+    .hireme-button {font-size: 1rem;}
+}
+
+@media (max-width: 1300px) {
+    .home-image-container {width: 280px;}
+    .profile-picture {height: 500px;}
+    .first-line {font-size: .9rem;}
+    .second-line {font-size: 2.8rem;}
+    .third-line {font-size: 1.2rem;}
+    .descritpion{width: 550px;}
+    .hireme-button {padding: 8px 20px;}
+}
+
+@media (max-width: 1160px) {
+    .home-image-container { 
+        width: 240px;
+        height: 630px;
+    }
+    .text-section {margin-top: 100px;}
+    .profile-picture {height: 460px;}
+    .second-line {font-size: 2.6rem;}
+    .third-line {font-size: 1.2rem;}
+    .descritpion p {
+        font-size: .8rem;
+        line-height: 22px;
+    }
+    .descritpion{width: 480px;}
+    .hireme-button {padding: 8px 20px;}
+}
+
+@media (max-width: 1020px) {
+    .home-image-container { 
+        width: 190px;
+        height: 600px;
+    }
+    .text-section {
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    .profile-picture {height: 410px;}
+    .first-line {font-size: .8rem;}
+    .second-line {
+        font-size: 2.5rem; 
+        height: 60px;
+    }
+    .third-line {font-size: 1rem;}
+    .descritpion p {
+        font-size: .7rem;
+        line-height: 18px;
+    }
+    .descritpion{width: 420px;}
+    .hireme-button {
+        font-size: .9rem;
+        padding: 5px 17px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-image-container { 
+        width: 165px;
+        height: 570px;
+    }
+    .text-section {margin-left: 30px;}
+    .profile-picture {
+        height: 380px;
+        margin-left: -150px;
+    }
+    .first-line {font-size: .7rem;}
+    .second-line {
+        font-size: 2.3rem;
+        height: 50px;
+    }
+    .third-line {font-size: .8rem;}
+    .descritpion p {
+        font-size: .6rem;
+        line-height: 15px;
+    }
+    .descritpion{width: 380px;}
+}
+
+@media (max-width: 790px) {
+    .home {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 600px;
+       align-items: start;
+    }
+
+    .home-image-container {
+        width: 400px;
+        height: 500px;
+        background-image: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .profile-picture {
+        margin: 0;
+        height: 470px;
+        box-shadow: 0px 0px 70px rgb(207, 36, 36);
+    }
+
+    .left-home-section {
+        display: flex;
+        justify-content: center;
+        order: 2;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    .right-home-section {
+        justify-content: center;
+        margin-bottom: 20px;
+        height: 650px;
+    }
+    
+    .text-section {
+        margin: 0;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-line {font-size: 1.9rem;}
+    .second-line {
+        font-size: 4.3rem;
+        margin: 0;
+        height: auto;
+    }
+    .third-line {font-size: 2rem;}
+    .descritpion {width: 70%;}
+    .descritpion p {
+        font-size: 1.1rem;
+        line-height: 28px;
+        text-align: center;
+    }
+    .hireme-button {
+        font-size: 1.3rem;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-image-container {margin-top: 100px;}
+    .profile-picture {height: 400px;}
+    .home {grid-template-rows: 1fr 510px;}
+    .first-line {font-size: 1.4rem;}
+    .second-line {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    .third-line {font-size: 1.6rem;}
+    .descritpion p {
+        font-size: .8rem;
+        line-height: 23px;
+    }
+    .right-home-section {height: 550px;}
+    .left-home-section {margin-top: 50px;}
+}
+
+@media (max-width: 540px) {
+    .home-image-container {
+        margin-top: 150px;
+        height: 350px;
+    }
+    .profile-picture {
+        height: 340px;
+        box-shadow: none;
+    }
+    .home {grid-template-rows: 1fr 440px;}
+    .first-line {font-size: 1rem;}
+    .second-line {font-size: 3rem;}
+    .third-line {font-size: 1.3rem;}
+    .descritpion {width: 90%;}
+    .descritpion p {width: 100%;}
+    .right-home-section {height: 440px;}
+    .left-home-section {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .hireme-button {
+        padding: 7px 27px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        border-radius: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 455px) {
+    .home-image-container {margin-top: 120px;}
+    .profile-picture {height: 290px;}
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+     }
+    .first-line {font-size: .9rem;}
+    .second-line {
+        position: relative;
+        top: 2px;
+        font-size: 2rem;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .third-line {font-size: 1.2rem;}
+    .descritpion p {
+        font-size: .8rem;
+        line-height: 23px;
+    }
+    .right-home-section {width: 90%;}
+    .left-home-section {
+        margin-top: 0px;
+        width: 90%;
+    }
+}
