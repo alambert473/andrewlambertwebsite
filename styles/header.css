@@ -261,8 +261,8 @@ a:hover {color: var(--redcolor);}
     .navbarlogo {font-size: 1.5rem;}
     header {
         background-color: rgba(11, 11, 11, 0.6);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px); 
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px); 
     }
 }
 
