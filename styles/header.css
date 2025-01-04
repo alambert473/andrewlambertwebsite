@@ -156,7 +156,7 @@ a:hover {color: var(--redcolor);}
 .active {color: var(--redcolor);}
 
 .nav-bar-section {
-    margin-right: 50px;
+    margin-right: 15px;
     display: none;
 }
 
@@ -234,7 +234,6 @@ a:hover {color: var(--redcolor);}
 
     nav {transform: translateY(-120%);}    
     ul {padding: 0;}
-    .nav-bar-section {margin-top: 10px;}
 
     .contact-me {
         margin-bottom: 30px;
@@ -253,10 +252,6 @@ a:hover {color: var(--redcolor);}
     .left-header-section p {
         margin-left: 20px;
         font-size: 2rem;
-    }
-    .nav-bar-section {
-        display: block;
-        margin-right: 20px;
     }
     .navbarlogo {font-size: 1.5rem;}
 }

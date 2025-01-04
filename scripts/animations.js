@@ -1,3 +1,4 @@
+/*
 import { animationElements, addAnimation, removeAnimation } from "./animationObject.js";
 
 const rightheaderSection =  document.querySelector('.right-header-section');
@@ -37,5 +38,4 @@ rightheaderSection.addEventListener('animationend', () => {
     animationElements.forEach((listItem) => {
         Observer.observe(listItem.observeElement);
     });
-});
-
+});*/

@@ -18,7 +18,7 @@
     font-weight: 300;
     margin-bottom: 3px;
     font-size: 4rem;
-    opacity: 0;
+    opacity: 1;
 }
 
 .skills-title-anim {
@@ -47,7 +47,7 @@
     background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
     display: block;
     border-radius: 15px;
-    opacity: 0;
+    opacity: 1;
 }
 
 .skills-line-anim {
@@ -88,7 +88,7 @@
     margin-bottom: 12px;
 }
 
-.js-leftfrontendtitle {opacity: 0;}
+.js-leftfrontendtitle {opacity: 1;}
 
 .js-leftfrontendtitleanim {
     animation-name: leftfrontendtitleanimation;
@@ -107,7 +107,7 @@
     }
 }
 
-.js-rightbackendtitle {opacity: 0;}
+.js-rightbackendtitle {opacity: 1;}
 
 .js-rightbackendtitleanim {
     animation-name: rightbackendtitleanimation;
@@ -179,7 +179,7 @@
     margin-top: 0;
 }
 
-.js-left-percentageline {opacity: 0;}
+.js-left-percentageline {opacity: 1;}
 
 .js-left-percentagelineanim {
     animation-name: leftpercentageanim;
@@ -198,7 +198,7 @@
     }
 }
 
-.js-left-skill-row {opacity: 0;}
+.js-left-skill-row {opacity: 1;}
 
 .js-left-skill-rowanim {
     animation-name: leftskillrowanim;
@@ -219,7 +219,7 @@
 
 /* right side below */
 
-.js-right-skill-row {opacity: 0;}
+.js-right-skill-row {opacity: 1;}
 
 .js-right-skill-rowanim {
     animation-name: rightskillrowanim;
@@ -238,7 +238,7 @@
     }
 }
 
-.js-right-percentageline {opacity: 0;}
+.js-right-percentageline {opacity: 1;}
 
 .js-right-percentagelineanim {
     animation-name: rightpercentageanim;
@@ -356,7 +356,7 @@
     margin: 0;
 }
 
-.js-other-title {opacity: 0;}
+.js-other-title {opacity: 1;}
 
 .js-other-titleanim {
     animation-name: othertitleanimation;
@@ -375,7 +375,7 @@
     }
 }
 
-.js-other-skill-row {opacity: 0;}
+.js-other-skill-row {opacity: 1;}
 
 .js-other-skill-rowanim {
     animation-name: otherskillrowanim;
@@ -394,7 +394,7 @@
     }
 }
 
-.js-other-percentageline {opacity: 0;}
+.js-other-percentageline {opacity: 1;}
 
 .js-other-percentagelineanim {
     animation-name: otherpercentageline;

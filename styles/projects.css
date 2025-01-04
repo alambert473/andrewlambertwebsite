@@ -17,7 +17,7 @@
     font-size: 3rem;
     margin-bottom: 5px;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
 }
 
 .projects-titleanim {
@@ -43,7 +43,7 @@
     background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
     display: block;
     border-radius: 15px;
-    opacity: 0;
+    opacity: 1;
 
 }
 
@@ -64,7 +64,7 @@
     }
 }
 
-.under-line-desc { opacity: 0;}
+.under-line-desc { opacity: 1;}
 
 .under-line-descanim {
     animation-name: underlinesdescanimation;
@@ -161,7 +161,7 @@
     background-color: rgb(188, 53, 53);
 }
 
-.firstproject-container, .secondproject-container, .thirdproject-container {opacity: 0;}
+.firstproject-container, .secondproject-container, .thirdproject-container {opacity: 1;}
 
 .firstproject-containeranim {
     animation-name: projectcontaineranimation;
@@ -267,7 +267,6 @@
 
 @media(max-width: 500px) {
     .experience{background-color: rgb(11, 11, 11);}
-    .black-div-animation{background-color: rgb(11, 11, 11);}
 }
 
 @media(max-width: 455px) {
