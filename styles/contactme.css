@@ -26,29 +26,29 @@
 
 .contactmeleftsection {
     width: 650px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .contactmeleftsectionanim {
     animation-name: contactmeleftanimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
 .contactmerightsection {
-    opacity: 1;
+    opacity: 0;
 }
 
 .contactmerightsectionanim {
     animation-name: contactmerightanimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-delay: .2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes contactmeleftanimation {
     from {
-        transform: translateX(-100%);
+        transform: translateY(50%);
         opacity: 0;
     }
     to {
@@ -59,11 +59,11 @@
 
 @keyframes contactmerightanimation {
     from {
-        transform: translateX(100%);
+        transform: scale(0.2);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: scale(1);
         opacity: 1;
     }
 }
@@ -98,12 +98,12 @@
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 2px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .contactmetitleanim {
     animation-name: contactitlecontaineranimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
@@ -113,18 +113,18 @@
     background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
     display: block;
     border-radius: 15px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .contact-lineanim {
     animation-name: contactitlecontaineranimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes contactitlecontaineranimation {
     from {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
         opacity: 0;
     }
     to {

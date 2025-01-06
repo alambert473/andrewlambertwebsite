@@ -16,26 +16,26 @@
     height: 750px;
     border-radius: 50px;
     margin-left: 90px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .aboutme-pictureAnimation {
     animation-name: profilepictureAnimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
 @keyframes profilepictureAnimation {
     0% {
-        transform: translateX(-120%);
+        transform: scale(0.5);
         opacity: 0;
     } 
     50% {
         opacity: .5;
     }
     100% {
-        transform: translateX(0);
+        transform: scale(1);
         opacity: 1;
     }
 }
@@ -76,24 +76,24 @@
 
 .right-about-section div {
     width: 800px;
-    opacity: 1;
+    opacity: 0;
 
 }
 
 .right-about-sectionAnimation {
     animation-name: aboutsectionrightAnimation;
-    animation-duration: .5s;
-    animation-delay: .2s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes aboutsectionrightAnimation {
     0% {
-        transform: translateX(100%);
+        transform: scale(0.5);
         opacity: 0;
     } 
     100% {
         transform: translateX(0);
+        transform: scale(1);
         opacity: 1;
     }
 }

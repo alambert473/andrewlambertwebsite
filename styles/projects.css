@@ -17,18 +17,18 @@
     font-size: 3rem;
     margin-bottom: 5px;
     text-align: center;
-    opacity: 1;
+    opacity: 0;
 }
 
 .projects-titleanim {
     animation-name: projectstitlesectionanimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes projectstitlesectionanimation {
     from {
-        transform: translateX(-200%);
+        transform: translateX(-150%);
         opacity: 0;
     }
     to {
@@ -43,19 +43,19 @@
     background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
     display: block;
     border-radius: 15px;
-    opacity: 1;
+    opacity: 0;
 
 }
 
 .projects-lineanim {
     animation-name: projectslineanimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes projectslineanimation {
     from {
-        transform: translateX(-150%);
+        transform: translateX(-100%);
         opacity: 0;
     }
     to {
@@ -68,13 +68,13 @@
 
 .under-line-descanim {
     animation-name: underlinesdescanimation;
-    animation-duration: .35s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
 }
 
 @keyframes underlinesdescanimation {
     from {
-        transform: translateX(-190%);
+        transform: translateX(-100%);
         opacity: 0;
     }
     to {
@@ -161,7 +161,7 @@
     background-color: rgb(188, 53, 53);
 }
 
-.firstproject-container, .secondproject-container, .thirdproject-container {opacity: 1;}
+.firstproject-container, .secondproject-container, .thirdproject-container {opacity: 0;}
 
 .firstproject-containeranim {
     animation-name: projectcontaineranimation;

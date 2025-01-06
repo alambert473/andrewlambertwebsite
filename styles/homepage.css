@@ -8,18 +8,18 @@
 .text-section {
     margin-top: 0px;
     margin-left: 70px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .text-section-anim {
     animation-name: textsectionanimation;
-    animation-duration: .3s; 
+    animation-duration: .6s; 
     animation-fill-mode: forwards;
 }
 
 @keyframes textsectionanimation {
     from {
-        transform: translate3d(-20%, 50%, 0);
+        transform: translateY(110%);
         opacity: 0;
     }
     to {
@@ -97,12 +97,12 @@
     border-bottom-left-radius: 100px;
     width: 450px;
     height: 750px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .home-image-container-anim {
     animation-name: righthomeanimation;
-    animation-duration: .3s; 
+    animation-duration: .6s; 
     animation-fill-mode: forwards;
 }
 
@@ -115,7 +115,7 @@
 
 @keyframes righthomeanimation {
     from {
-        transform: translateX(160%);
+        transform: translateY(-120%);
         opacity: 0;
     }
     to {

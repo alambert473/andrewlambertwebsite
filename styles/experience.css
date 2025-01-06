@@ -19,7 +19,7 @@
     font-weight: 300;
     margin-bottom: 10px;
     font-size: 3rem;
-    opacity: 1;
+    opacity: 0;
 }
 
 .experience-titleanim {
@@ -48,7 +48,7 @@
     background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
     display: block;
     border-radius: 15px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .experience-lineanim {
@@ -83,7 +83,7 @@
     bottom: -5%;
     right: -5%;
     left: -5%;
-    background-color: transparent;
+    background-color: rgb(16, 16, 16);
     height: 100%;
     z-index: 50;
 } 
@@ -200,12 +200,11 @@
 }
 
 @media(max-width: 1200px) {
-    /*
     .black-div-animation {
         bottom: -13%;
         height: 110%;
         left: -6%;
-    } */
+    } 
     .experiencemain {
         grid-template-columns: 340px 340px;
         column-gap: 200px;
@@ -224,9 +223,8 @@
 }
 
 @media (max-width: 1020px) {
-    /*
     .black-div-animation {right: -7%;}
-    */
+    
     .experiencemain {
         grid-template-columns: 250px 250px;
         column-gap: 150px;
@@ -246,14 +244,13 @@
 }
 
 @media (max-width: 790px) {
-    /*
     .black-div-animation {
         right: -14%;
         left: -10%;
         bottom: -24%;
         height: 120%;
     }
-    */
+    
     .experiencemain {
         grid-template-columns: 1fr;
         grid-template-rows: 450px 450px;
@@ -262,19 +259,17 @@
 
 
 @media(max-width: 455px) {
-    /*
     .black-div-animation {
         right: -2%;
         left: -8%;
     }
-    */
+    
     .educationcontainer {width: 300px;}
 }
 
 @media(max-width: 400px) {
-    /*
     .black-div-animation {left: -10%;}
-    */
+    
     .educationcontainer {width: 260px;}
     .educationinfo{
         width: 250px;
@@ -283,9 +278,8 @@
 }
 
 @media(max-width: 360px) {
-    /*
     .black-div-animation {left: -10.5%;}
-    */
+    
     .educationinfo {line-height: 12px;}
     .educationcontainer {width: 210px;}
     .educationinfo{width: 210px;}
