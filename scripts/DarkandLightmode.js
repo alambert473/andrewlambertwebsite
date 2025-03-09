@@ -1,11 +1,9 @@
-import { headerTitles } from "./animationLightDarkData.js";
 import aboutDesc from "./aboutdesc.js";
 
 export let darkMode = true;
 
 const ToggleButton = document.querySelector('.lightdarkModeContainer');
 const ToggleButtonCircle = document.querySelector('.lightdarkmodeCircle');
-const ulcontainer = document.querySelector('.js-ulcontainer');
 const header = document.querySelector('header');
 const body = document.querySelector('body');
 const leftheadersection = document.querySelector('.js-titlecontainer');
@@ -41,6 +39,7 @@ const contactrecdesc = document.querySelector('.contactrecdesc')
 const contacticontext = document.querySelectorAll('.phone-margin');
 const ulbackground = document.querySelector('.js-ulcontainer');
 const blackdivanimation = document.querySelector('.black-div-animation');
+const headerTitles = document.querySelectorAll('.js-headera');
 
 function checksingleElement(element, name) {
     if (element.classList.contains(name)) {

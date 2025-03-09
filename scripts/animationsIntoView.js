@@ -1,6 +1,7 @@
 import { animationElements, addAnimation, removeAnimation } from "./animationIntoViewObject.js";
 
-const rightheaderSection =  document.querySelector('.right-header-section');
+const leftheadersection = document.querySelector('.js-titlecontainer');
+const rightheaderSection =  document.querySelector('.js-right-header-section');
 const lightdarkcontainer = document.querySelector('.lightdarkModeContainer');
 
 const Observer = new IntersectionObserver((observeelement) => {
@@ -34,12 +35,18 @@ const Observer = new IntersectionObserver((observeelement) => {
     threshold: 0.2
 });
 
-rightheaderSection.addEventListener('animationend', () => {
-    animationElements.forEach((listItem) => {
-        Observer.observe(listItem.observeElement);
-    });
-});
+window.addEventListener('load', () => {
+    leftheadersection.classList.add('left-header-section');
+    rightheaderSection.classList.add('rightheadersectionanim');
+    lightdarkcontainer.classList.add('lightdarkmodecontaineranim');
 
-lightdarkcontainer.addEventListener('animationend', () => {
-    lightdarkcontainer.classList.remove('lightdarkmodecontaineranim');
+    lightdarkcontainer.addEventListener('animationend', () => {
+        lightdarkcontainer.classList.remove('lightdarkmodecontaineranim');
+    });
+
+    leftheadersection.addEventListener('animationend', () => {
+        animationElements.forEach((listItem) => {
+            Observer.observe(listItem.observeElement);
+        });
+    });
 });

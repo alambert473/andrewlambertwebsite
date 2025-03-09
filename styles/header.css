@@ -115,10 +115,10 @@ header {
     }
 }
 
-.right-header-section {
+.rightheadersectionanim {
     animation-name: rightheaderanimation;
     animation-duration: .8s; 
-} 
+}
 
 .right-header-section nav ul {
     display: flex;
@@ -344,7 +344,8 @@ a:hover {color: var(--redcolor);}
     width: 19px;
     height: 17px;
     border-radius: 60px;
-    margin-left: -3.5px;
+    position: absolute;
+    left: 1.5px;
     background-color: rgb(11, 11, 11);
 }
 
