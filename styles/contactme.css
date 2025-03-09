@@ -1,6 +1,5 @@
 .contactme {
     min-height: 100svh;
-    background-color: rgb(11, 11, 11);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +12,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 55px;
-
 }
 
 .contactmain {
@@ -76,11 +74,17 @@
 
 .connectrectext {
     margin-top: 120px;
-    color: var(--whitecolor);
+    color: white;
     font-size: 4rem;
     line-height: 65px;
     margin-bottom: 0;
     font-weight: 500;
+
+    transition: color .6s;
+}
+
+.connectrectextlight {
+    color: rgb(11, 11, 11);
 }
 
 .connect-text {
@@ -88,17 +92,49 @@
 }
 
 .contactrecdesc {
-    color: rgb(230, 230, 230);
     font-size: 1.2rem;
+    color: rgb(230, 230, 230);
+
+    transition: color .6s;
+}
+
+.contactrecdesclight {
+    color: rgb(51, 51, 51);
+}
+
+@keyframes contactdesctoblackgray {
+    to {color: rgb(230, 230, 230);}
+}
+
+@keyframes contactdesctowhitegray {
+    to {color: rgb(51, 51, 51);}
+}
+
+.contactrescdesclightgreyAnimation {
+    animation-name: contactdesctowhitegray;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.contactrescdescblackgreyAnimation {
+    animation-name: contactdesctoblackgray;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 .contactmetitle {
-    color: var(--whitecolor);
     margin-top: 0;
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 2px;
     opacity: 0;
+    color: white;
+
+    transition: color .6s;
+}
+
+.contacttitlelight {
+    color: rgb(11, 11, 11);
 }
 
 .contactmetitleanim {
@@ -136,13 +172,21 @@
 
 .contacticon-container div {
     padding: 5px 5px;
-    background-color: rgb(232, 54, 54);
+    background-color: var(--redcolor);
     border-radius: 50%;
 }
 
 .contacticon-container p {
-    color: rgb(255, 255, 255);
     margin: 0;
+}
+
+.phone-margin {
+    color: rgb(255, 255, 255);
+    transition: color .6s;
+}
+
+.contacticontextlight {
+    color: rgb(51, 51, 51);
 }
 
 .phone-margin {
@@ -151,7 +195,7 @@
 }
 
 .phoneicon {
-    color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
 }
 
@@ -168,7 +212,7 @@
     gap: 25px;
 }
 
-.linkedinlogo-container {
+.linkedinlogo-container, .facebooklogo-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,19 +227,17 @@
     margin: 0;
 }
 
-.linkedinlogo-container:hover {
-    background-color: var(--redcolor);
-    color: var(--whitecolor);
+.facebooklogo-container {
+    padding: 12px 16px;
 }
 
-.instagramlogo {
-    color: var(--redcolor);
-    font-size: 3.6rem;
-    transition: color .5s;
+.linkedinlogo-container:hover, .facebooklogo-container:hover {
+    background-color: var(--redcolor);
+    color: white;
 }
 
 .instagramlogo:hover {
-    color: var(--whitecolor);
+    color: white;
 }
 
 .contactmargin {
@@ -211,6 +253,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 15px rgba(75, 75, 75, .4);
 }
 
 form p {
@@ -265,12 +308,12 @@ form button {
     background-image: linear-gradient(to right, red, rgb(209, 101, 71));
     box-shadow: 3px 5px 5px rgba(44, 44, 44, .5);
     cursor: pointer;
-    transition: transform .3s, background-color .3s;
+    transition: transform .3s, background-image .3s;
 }
 
 form button:hover {
     transform: scale(1.05);
-    background-color: rgb(219, 76, 76);
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(209, 101, 71, 0.7));
 }
 
 textarea {
@@ -336,11 +379,8 @@ textarea::placeholder {
     .contactmain {
         gap: 20px;
     }
-    .linkedinlogo-container {
+    .linkedinlogo-container, .facebooklogo-container {
         font-size: 1.6rem;
-    }
-    .instagramlogo {
-        font-size: 3.3rem;
     }
     .connectrectext {
         font-size: 2.8rem;
@@ -380,11 +420,8 @@ textarea::placeholder {
     .contactmain {
         gap: 20px;
     }
-    .linkedinlogo-container {
+    .linkedinlogo-container, .facebooklogo-container {
         font-size: 1.3rem;
-    }
-    .instagramlogo {
-        font-size: 2.9rem;
     }
     .social-media-container {
         gap: 20px;
@@ -494,7 +531,7 @@ textarea::placeholder {
 }
 
 @media(max-width: 790px) {
-    .linkedinlogo-container {
+    .linkedinlogo-container, .facebooklogo-container {
         margin-top: 0;
     }
 }
@@ -503,7 +540,7 @@ textarea::placeholder {
     .contactrecdesc {
         margin-top: 10px;
     }
-    .linkedinlogo-container {
+    .linkedinlogo-container, .facebooklogo-container {
         font-size: 1.4rem;
     }
 }
@@ -552,3 +589,31 @@ textarea::placeholder {
         margin-bottom: 100px;
     }
 }
+
+.TextToGreyAnimation {
+    animation-name: textToGrey;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.TexttoWhiteAnimation {
+    animation-name: textToWhite;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.TexttoBlackAnimation {
+    animation-name: textoDefaultBlack;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.linearshadowevelen {
+    background-image: linear-gradient(to right, rgb(11, 11, 11), var(--redcolor), rgb(11, 11, 11));
+}
+
+.linearshadowlight {
+    background-image: linear-gradient(to right, var(--titlecolor), var(--redcolor), var(--titlecolor));
+}
+
+.active {color: var(--redcolor) !important;}

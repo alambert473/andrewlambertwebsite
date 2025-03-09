@@ -1,8 +1,6 @@
 const button = document.querySelector('.navbar-button');
 const navbar = document.querySelector('nav');
 
-const isPlayed = false;
-
 button.addEventListener('click', () => {
     if (navbar.classList.contains('navtobottom')) {
         navbar.classList.remove('navtobottom');
@@ -21,3 +19,4 @@ button.addEventListener('click', () => {
         }, 500);
     }
 });
+

@@ -9,14 +9,12 @@ function removeActive(name) {
     });
 };
 
-window.addEventListener('scroll', () => {
+function updateScroll() {
     const scrollPosition = window.scrollY;
 
     pages.forEach((element) => {
         const topofelement = element.offsetTop;
         const bottomofelement = element.offsetHeight;
-
-        /*console.log(`scroll position: ${scrollPosition} compared to top of element (${topofelement}) and element height (${bottomofelement})`); */
 
         if (scrollPosition >= topofelement - 400 && scrollPosition < topofelement + bottomofelement) {
             headerTitles.forEach((title) => {
@@ -38,4 +36,10 @@ window.addEventListener('scroll', () => {
             });
         }
     }); 
+}
+
+updateScroll();
+
+window.addEventListener('scroll', () => {
+    updateScroll();
 }); 

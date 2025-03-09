@@ -14,17 +14,20 @@
 }
 
 .skills-title {
-    color: var(--whitecolor);
     font-weight: 300;
     margin-bottom: 3px;
     font-size: 4rem;
+    color: white;
+    transition: color .6s;
     opacity: 0;
 }
 
-.skills-title-anim {
-    animation-name: skills-titleanimation;
-    animation-duration: .35s;
-    animation-fill-mode: forwards;
+.skills-title-transitionblack {
+    color: rgb(11, 11, 11);
+}
+
+.colorWhiteDefault {
+    color: white;
 }
 
 @keyframes skills-titleanimation {
@@ -37,6 +40,13 @@
         transform: translateX(0);
     }
 }
+
+.skills-title-anim {
+    animation-name: skills-titleanimation;
+    animation-duration: .35s;
+    animation-fill-mode: forwards;
+}
+
 
 .skills-line {
     height: 2.5px;
@@ -77,12 +87,17 @@
 }
 
 .frontendandbackendtitle {
-    color: var(--whitecolor);
     font-size: 2rem;
     font-weight: 500;
     margin-top: 0;
     text-align: center;
     margin-bottom: 12px;
+    color: white;
+    transition: color .6s;
+}
+
+.frontendandbackendtitleBlack {
+    color: rgb(11, 11, 11);
 }
 
 .js-leftfrontendtitle {opacity: 0;}
@@ -132,12 +147,8 @@
     position: relative;
 }
 
-.percentageline {
-    width: 100%;
-    height: 11px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    position: relative;
+.percentlineshadow {
+    box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.7);
 }
 
 .skillsotherpercentageline{
@@ -151,11 +162,16 @@
 .redpercentline-height {height: 11px;}
 .htmllinetoend {width: 90%;}
 
-.skill-row-title-section p{
-    color: white;
+.skillstypetitle{
     margin: 0;
     font-size: .85rem;
     font-weight: 300;
+    color: white;
+    transition: color .6s;
+}
+
+.skillrowpblack {
+    color: rgb(11, 11, 11);
 }
 
 .percentage-text {
@@ -164,9 +180,14 @@
     top: -35px;
     right: 2px;
     font-size: .9rem;
-    color: white;
     padding: 3px 7px;
     background-color: transparent;
+    color: white;
+    transition: color .6s;
+}
+
+.percentagetextblack {
+    color: rgb(11, 11, 11);
 }
 
 .skill-row-title-section {
@@ -317,9 +338,14 @@
 
 .github-logo {
     font-size: 23px;
-    color: white;
     margin-left: 6px;
     margin-right: 8px;
+    color: white;
+    transition: color .6s;
+}
+
+.githublogoblack {
+    color: black
 }
 
 .linetoendbasic {
@@ -330,15 +356,15 @@
 
 .skillmovedown {margin-top: 30px;}
 .csslinetoend {width: 95%;}
-.reactlinetoend {width: 70%;}
-.javascriptlinetoend {width: 85%;}
+.reactlinetoend {width: 90%;}
+.javascriptlinetoend {width: 92%;}
 .mysqllinetoend {width: 65%;}
-.nodelinetoend {width: 70%;}
-.pythonlinetoend {width: 50%;}
-.mongodbline {width: 40%;}
+.nodelinetoend {width: 90%;}
+.pythonlinetoend {width: 70%;}
+.mongodbline {width: 80%;}
 .lualine {width: 93%;}
-.gitline {width: 90%;}
-.githubline {width: 80%;}
+.gitline {width: 97%;}
+.githubline {width: 95%;}
 
 .skills-other {
     margin-bottom: 70px;
@@ -346,14 +372,21 @@
 }
 
 .skills-other p {
-    color: var(--whitecolor);
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
     margin: 0;
 }
 
-.js-other-title {opacity: 0;}
+.js-other-title {
+    opacity: 0; 
+    color: white;
+    transition: color .6s;
+}
+
+.jsothertitleblack {
+    color: black;
+}
 
 .js-other-titleanim {
     animation-name: othertitleanimation;
@@ -393,6 +426,10 @@
 
 .js-other-percentageline {opacity: 0;}
 
+.jsotherpercentageshadow {
+    box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.7);
+}
+
 .js-other-percentagelineanim {
     animation-name: otherpercentageline;
     animation-duration: .6s;
@@ -429,14 +466,21 @@
     background-color: rgb(0, 234, 255);
 }
 
-.projects-desc-title {color: var(--whitecolor);}
+.projects-desc-title {color: var(--black);}
 
 .under-line-desc {
-    color: rgb(225, 225, 225);
     width: 500px;
     text-align: center;
     font-size: .8rem;
     margin-bottom: 0;
+}
+
+.under-line-desc-grey {
+    color: rgb(225, 225, 225);
+}
+
+.textoBlackClass {
+    color: black;
 }
 
 @media (max-width: 1600px) {
@@ -516,4 +560,8 @@
  @media(max-width: 370px) {
     .skills-main {grid-template-columns: 280px;}
     .skills-other {width: 280px;}
+}
+
+.colortoWhiteClass {
+    color: white;
 }

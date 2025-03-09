@@ -29,7 +29,7 @@
 }
 
 .first-line {
-    color: var(--whitecolor);
+    color: white;
     margin-top: 0;
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -44,7 +44,7 @@
 }
 
 .third-line {
-    color: var(--whitecolor);
+    color: white;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.8rem;
@@ -54,7 +54,7 @@
 .descritpion {width: 700px;}
 
 .descritpion p {
-    color: var(--whitecolor);
+    color: white;
     font-size: 1.2rem;
     line-height: 30px;
     margin-top: 3px;
@@ -64,7 +64,7 @@
     font-weight: 500;
     background-color: var(--redcolor);
     border: 0;
-    color: var(--whitecolor);
+    color: var(--buttontextcolor);
     padding: 10px 30px;
     border-radius: 20px;
     font-size: 1.3rem;
@@ -73,6 +73,10 @@
     transition: padding .5s, background-color .5s;
     position: relative;
     top: 10px;
+}
+
+.hiremebuttonshadow {
+    box-shadow: 3px 3px 5px rgb(157, 157, 157)
 }
 
 .hireme-button:hover {
@@ -98,6 +102,7 @@
     width: 450px;
     height: 750px;
     opacity: 0;
+    box-shadow: -2px 0px 10px rgb(39, 39, 39, .7);
 }
 
 .home-image-container-anim {
@@ -311,6 +316,12 @@
         font-size: 1.3rem;
         padding: 10px 30px;
     }
+    .home-image-container {
+        box-shadow: none;
+    }
+    .profile-picture {
+        box-shadow: 5px 5px 5px rgba(11, 11, 11, 0.5);
+    }
 }
 
 @media (max-width: 640px) {
@@ -338,7 +349,6 @@
     }
     .profile-picture {
         height: 340px;
-        box-shadow: none;
     }
     .home {grid-template-rows: 1fr 440px;}
     .first-line {font-size: 1rem;}
