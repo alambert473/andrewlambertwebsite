@@ -1,5 +1,6 @@
 import { animationElements, addAnimation, removeAnimation } from "./animationIntoViewObject.js";
 
+const leftheaderp = document.querySelector('.js-titlecontainer p');
 const leftheadersection = document.querySelector('.js-titlecontainer');
 const rightheaderSection =  document.querySelector('.js-right-header-section');
 const lightdarkcontainer = document.querySelector('.lightdarkModeContainer');
@@ -36,6 +37,10 @@ const Observer = new IntersectionObserver((observeelement) => {
 });
 
 window.addEventListener('load', () => {
+    rightheaderSection.classList.remove('setOpacity');
+    lightdarkcontainer.classList.remove('setOpacity');
+    leftheaderp.classList.remove('setOpacity');
+
     leftheadersection.classList.add('left-header-section');
     rightheaderSection.classList.add('rightheadersectionanim');
     lightdarkcontainer.classList.add('lightdarkmodecontaineranim');
