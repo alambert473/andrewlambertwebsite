@@ -68,7 +68,7 @@ function renderWebsiteMode() {
     const HiremebuttonShadowType = darkMode === false ? 'hiremebuttonshadow' : '';
     const aboutpictureType = darkMode === false ? 'aboutshadow' : null;
     const DefaultTextType = darkMode === false ? 'TexttoBlackAnimation' : 'TexttoWhiteAnimation';
-    const lineType = darkMode === false ? 'linearshadowlight': 'linearshadowevelen';
+    const lineType = darkMode === false ? 'linearshadowlight' : 'linearshadowevelen';
     const divanimationcolor = darkMode === false ? 'rgb(250, 250, 250)' : 'rgb(16, 16, 16)';
 
 
@@ -84,7 +84,7 @@ function renderWebsiteMode() {
         body.classList.remove(ele);
     })
 
-    body.classList.add(defaultmodeType); 
+    body.classList.add(defaultmodeType);
 
     // all animation elements without a parent must be added manually to light/dark mode
 
@@ -149,10 +149,10 @@ function renderWebsiteMode() {
         <div class="descritpion">
             <p class="${DefaultTextType}">
                 Passionate about creating seamless user experiences, I'm a Computer
-                Science major at Wayne State University with a keen interest in full stack development. At 21,
-                I've already dabbled in modern web technologies, building projects that bridge the gap between
-                design and functionality. Dive into my
-                journey and explore the works that fuel my ambition on my About Me page.
+                Science graduate from Wayne State University with a strong interest in
+                full stack development. At 21, I’ve already built projects that bridge the 
+                gap between design and functionality using modern web technologies. Dive 
+                into my journey and explore the work that drives my ambition on my About Me page.
             </p>
         </div>
 
