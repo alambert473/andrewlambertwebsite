@@ -1,6 +1,6 @@
 export default function aboutDesc() {
     return `
-        My name is Andrew Lambert, and I’m a 21-year-old developer with a lifelong passion for 
+        My name is Andrew Lambert, and I’m a 22-year-old developer with a lifelong passion for 
         technology and programming. My journey started when I was 13, developing games on Roblox 
         using a scripting language called Lua. What began as a curiosity about creating virtual worlds 
         quickly turned into a deeper fascination with building interactive experiences that connect people. 
