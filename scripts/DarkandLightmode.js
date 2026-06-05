@@ -32,6 +32,14 @@ const underdescproj = document.querySelector('.under-line-desc');
 const allcontainersproj = document.querySelectorAll('.projects-container');
 const projdesctitle = document.querySelectorAll('.projects-desc-title');
 const projectcontainerinfo = document.querySelectorAll('.projects-desc-info');
+const techbadges = document.querySelectorAll('.tech-badge');
+const testimonialssection = document.querySelector('.js-testimonials');
+const testimonialstitle = document.querySelector('.js-testimonials-title');
+const testimonialsline = document.querySelector('.js-testimonials-line');
+const testimonialcards = document.querySelectorAll('.js-testimonial-card');
+const testimonialquotes = document.querySelectorAll('.js-testimonial-quote');
+const testimonialprojects = document.querySelectorAll('.js-testimonial-project');
+const testimonialmetas = document.querySelectorAll('.js-testimonial-meta');
 const contactmetitle = document.querySelector('.contactmetitle');
 const contactmeline = document.querySelector('.contact-line');
 const connectrectext = document.querySelector('.connectrectext');
@@ -127,6 +135,14 @@ function renderWebsiteMode() {
     checkMutipleElements(allcontainersproj, 'projectcontainerlight');
     checkMutipleElements(projdesctitle, 'projects-desc-titlelight');
     checkMutipleElements(projectcontainerinfo, 'projectsdescinfolight');
+    checkMutipleElements(techbadges, 'tech-badge-light');
+    checksingleElement(testimonialssection, 'testimonials-light');
+    checksingleElement(testimonialstitle, 'testimonials-title-light');
+    checksingleElement(testimonialsline, 'testimonials-line-light');
+    checkMutipleElements(testimonialcards, 'testimonial-card-light');
+    checkMutipleElements(testimonialquotes, 'testimonial-quote-light');
+    checkMutipleElements(testimonialprojects, 'testimonial-project-light');
+    checkMutipleElements(testimonialmetas, 'testimonial-meta-light');
     checkMutipleElements(contacticontext, 'contacticontextlight');
     checkMutipleElements(headerTitles, 'alightmode');
 
@@ -148,11 +164,13 @@ function renderWebsiteMode() {
 
         <div class="descritpion">
             <p class="${DefaultTextType}">
-                Passionate about creating seamless user experiences, I'm a Computer
-                Science graduate from Wayne State University with a strong interest in
-                full stack development. At 21, I’ve already built projects that bridge the 
-                gap between design and functionality using modern web technologies. Dive 
-                into my journey and explore the work that drives my ambition on my About Me page.
+                Passionate about creating seamless user experiences, I'm a
+                Computer Science graduate from Wayne State University with a
+                strong interest in full stack development. I currently am unemployed and 
+                I am looking for futute opportunities. At 22, I’ve already built
+                projects that bridge the gap between design and functionality using modern
+                web technologies. Dive into my journey and explore the work that
+                drives my ambition on my About Me page.
             </p>
         </div>
 

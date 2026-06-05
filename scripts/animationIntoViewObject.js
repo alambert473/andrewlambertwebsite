@@ -186,8 +186,36 @@ export const animationElements = [
         animationname: 'animateblackdiv',
         nameofclass: 'experiencemain',
         mutiple: false
+    },
+    {
+        observeElement: document.querySelector('.testimonials-title-section'),
+        animElement: document.querySelector('.js-testimonials-title'),
+        animationname: 'testimonials-titleanim',
+        nameofclass: 'testimonials-title-section',
+        mutiple: true,
+        otherAnimationsList: [
+            {
+                Array: false,
+                otherelement: document.querySelector('.js-testimonials-line'),
+                otherelementanimname: 'testimonials-lineanim'
+            }
+        ]
+    },
+    {
+        observeElement: document.querySelector('.testimonials-container'),
+        animElement: document.querySelector('.firsttestimonial-card'),
+        animationname: 'firsttestimonial-cardanim',
+        nameofclass: 'testimonials-container',
+        mutiple: true,
+        otherAnimationsList: [
+            {
+                Array: false,
+                otherelement: document.querySelector('.secondtestimonial-card'),
+                otherelementanimname: 'secondtestimonial-cardanim'
+            }
+        ]
     }
-    
+
 ];
 
 export function addAnimation(name) {
