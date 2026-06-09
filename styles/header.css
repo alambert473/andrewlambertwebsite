@@ -68,7 +68,9 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background-color: rgb(11, 11, 11);
+    background-color: rgba(11, 11, 11, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .headertoBlackAnimation {
@@ -89,12 +91,12 @@ header {
 
 
 @keyframes headertoBlack {
-    from {background-color: rgb(255, 255, 255);}
-    to {background-color: rgb(11, 11, 11);}
+    from {background-color: rgba(255, 255, 255, 0.75);}
+    to {background-color: rgba(11, 11, 11, 0.75);}
 }
 
 @keyframes headertoWhite {
-    to {background-color: rgb(255, 255, 255);}
+    to {background-color: rgba(255, 255, 255, 0.75);}
 }
 
 .left-header-section {
@@ -177,13 +179,13 @@ header {
 }
 
 .js-ulcontainer {
-    background-color: rgb(11, 11, 11);
+    background-color: transparent;
 
     transition: background-color .6s;
 }
 
 .js-ulcontainerlight {
-    background-color: white;
+    background-color: transparent;
 }
 
 @keyframes navbaranimation {
@@ -479,18 +481,6 @@ a:hover {color: var(--redcolor);}
         padding-top: 10px;
     }
     .navbarlogo {font-size: 1.5rem;}
-    header {
-        background-color: rgba(11, 11, 11, 0.6) !important;
-        backdrop-filter: blur(6px) !important;
-        -webkit-backdrop-filter: blur(6px) !important; 
-    }
-
-    .headertoWhiteAnimation {
-        background-color: rgba(255, 255, 255, 0.6) !important;
-        backdrop-filter: blur(6px) !important;
-        -webkit-backdrop-filter: blur(6px) !important; 
-    }
-
     .lightdarkModeContainer {
         right: 65px;
     }

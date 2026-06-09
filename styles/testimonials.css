@@ -89,6 +89,7 @@
     border-radius: 20px;
     padding: 32px 30px;
     width: 460px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -180,11 +181,22 @@
 }
 
 @media (max-width: 860px) {
-    .testimonial-card { width: 90%; max-width: 520px; }
-    .testimonials-container { flex-direction: column; align-items: center; }
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .testimonial-card {
+        width: 100%;
+        max-width: 520px;
+        padding: 24px 20px;
+    }
 }
 
 @media (max-width: 455px) {
     .testimonials-title { font-size: 2rem; }
     .testimonials-line { width: 230px; }
+    .testimonial-card { padding: 20px 16px; }
 }

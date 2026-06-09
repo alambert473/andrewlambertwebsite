@@ -28,8 +28,6 @@ const Observer = new IntersectionObserver((observeelement) => {
                     }
                 }); 
             });
-
-            removeAnimation(DOMItem);
         }
     });
 }, {
