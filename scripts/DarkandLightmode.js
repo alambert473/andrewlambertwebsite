@@ -46,6 +46,7 @@ const connectrectext = document.querySelector('.connectrectext');
 const contactrecdesc = document.querySelector('.contactrecdesc')
 const contacticontext = document.querySelectorAll('.phone-margin');
 const ulbackground = document.querySelector('.js-ulcontainer');
+const mobilenav = document.querySelector('nav');
 const blackdivanimation = document.querySelector('.black-div-animation');
 const headerTitles = document.querySelectorAll('.js-headera');
 
@@ -122,7 +123,8 @@ function renderWebsiteMode() {
     checksingleElement(contactmetitle, 'contacttitlelight')
     checksingleElement(connectrectext, 'connectrectextlight');
     checksingleElement(contactrecdesc, 'contactrecdesclight');
-    checksingleElement(ulbackground, 'js-ulcontainerlight')
+    checksingleElement(ulbackground, 'js-ulcontainerlight');
+    checksingleElement(mobilenav, 'nav-light');
 
     skillsline.classList.add(lineType);
     experienceline.classList.add(lineType);
