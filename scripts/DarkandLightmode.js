@@ -14,13 +14,9 @@ const aboutpicture = document.querySelector('.js-imagecontainer');
 const aboutright = document.querySelector('.js-rightaboutcontainer')
 const skillstitle = document.querySelector('.skills-title');
 const skillsline = document.querySelector('.skills-line');
-const frontendbackendtitles = document.querySelectorAll('.frontendandbackendtitle');
-const skillstext = document.querySelectorAll('.skill-row-title-section p');
-const percentagetext = document.querySelectorAll('.percentage-text');
-const percentageline = document.querySelectorAll('.percentageline');
-const otherskillslinepercentage = document.querySelectorAll('.js-other-percentageline');
-const githublogo = document.querySelector('.github-logo ');
-const othertitle = document.querySelector('.js-other-title');
+const skillnames = document.querySelectorAll('.js-skill-name');
+const skillcards = document.querySelectorAll('.skill-card');
+const skillgithubicon = document.querySelector('.js-github-skill-icon');
 const experiencepage = document.querySelector('.experience');
 const experiencetitle = document.querySelector('.experiencetitle');
 const experienceline = document.querySelector('.experience-line');
@@ -110,8 +106,7 @@ function renderWebsiteMode() {
     checksingleElement(skillstitle, 'skills-title-transitionblack');
     checksingleElement(educationtitle, 'educationexperienceblack');
     checksingleElement(experiencetitlemain, 'educationexperienceblack');
-    checksingleElement(githublogo, 'githublogoblack');
-    checksingleElement(othertitle, 'jsothertitleblack');
+    checksingleElement(skillgithubicon, 'skill-icon-fa-light');
     checksingleElement(experiencetitle, 'experiencetitleblack');
     checksingleElement(projectstitle, 'projectstitleblack');
     checksingleElement(projectsline, 'linearshadowlight');
@@ -129,11 +124,8 @@ function renderWebsiteMode() {
     skillsline.classList.add(lineType);
     experienceline.classList.add(lineType);
 
-    checkMutipleElements(frontendbackendtitles, 'frontendandbackendtitleBlack');
-    checkMutipleElements(skillstext, 'skillrowpblack');
-    checkMutipleElements(percentagetext, 'percentagetextblack');
-    checkMutipleElements(percentageline, 'percentlineshadow');
-    checkMutipleElements(otherskillslinepercentage, 'jsotherpercentageshadow');
+    checkMutipleElements(skillnames, 'skill-name-light');
+    checkMutipleElements(skillcards, 'skill-card-light');
     checkMutipleElements(allcontainersproj, 'projectcontainerlight');
     checkMutipleElements(projdesctitle, 'projects-desc-titlelight');
     checkMutipleElements(projectcontainerinfo, 'projectsdescinfolight');

@@ -44,61 +44,11 @@ export const animationElements = [
         ]
     },
     {
-        observeElement: document.querySelector('.skills-left-section'),
-        animElement: document.querySelector('.js-leftfrontendtitle'),
-        animationname: 'js-leftfrontendtitleanim',
-        nameofclass: 'skills-left-section',
-        mutiple: true,
-        otherAnimationsList: [
-            {
-                Array: true,
-                otherelement: document.querySelectorAll('.js-left-skill-row'),
-                otherelementanimname: 'js-left-skill-rowanim'
-            },
-            {
-                Array: true,
-                otherelement: document.querySelectorAll('.js-left-percentageline'),
-                otherelementanimname: 'js-left-percentagelineanim'
-            }
-        ]
-    },
-    {
-        observeElement: document.querySelector('.skills-right-section'),
-        animElement: document.querySelector('.js-rightbackendtitle'),
-        animationname: 'js-rightbackendtitleanim',
-        nameofclass: 'skills-right-section',
-        mutiple: true,
-        otherAnimationsList: [
-            {
-                Array: true,
-                otherelement: document.querySelectorAll('.js-right-skill-row'),
-                otherelementanimname: 'js-right-skill-rowanim'
-            },
-            {
-                Array: true,
-                otherelement: document.querySelectorAll('.js-right-percentageline'),
-                otherelementanimname: 'js-right-percentagelineanim'
-            }
-        ]
-    },
-    {
-        observeElement: document.querySelector('.js-skills-other'),
-        animElement: document.querySelector('.js-other-title'),
-        animationname: 'js-other-titleanim',
-        nameofclass: 'js-skills-other',
-        mutiple: true,
-        otherAnimationsList: [
-            {
-                Array: true,
-                otherelement: document.querySelectorAll('.js-other-skill-row'),
-                otherelementanimname: 'js-other-skill-rowanim'
-            },
-            {
-                Array: true,
-                otherelement: document.querySelectorAll('.js-other-percentageline'),
-                otherelementanimname: 'js-other-percentagelineanim'
-            }
-        ]
+        observeElement: document.querySelector('.js-skills-grid-wrapper'),
+        animElement: document.querySelector('.js-skills-grid'),
+        animationname: 'skills-grid-anim',
+        nameofclass: 'js-skills-grid-wrapper',
+        mutiple: false
     },
     {
         observeElement: document.querySelector('.experiencetitlecontainer'),

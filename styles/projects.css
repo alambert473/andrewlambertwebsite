@@ -75,10 +75,13 @@
     }
 }
 
-.under-line-desc { 
-    opacity: 0; 
+.under-line-desc {
+    opacity: 0;
+    width: 500px;
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 0;
     color: rgb(250, 250, 250);
-
     transition: color .6s;
 }
 
