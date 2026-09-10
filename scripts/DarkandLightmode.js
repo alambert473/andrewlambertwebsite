@@ -161,7 +161,7 @@ function renderWebsiteMode() {
                 Passionate about creating seamless user experiences, I'm a
                 Computer Science graduate from Wayne State University with a
                 strong interest in full stack development. I currently am unemployed and 
-                I am looking for futute opportunities. At 22, I’ve already built
+                I am looking for futute opportunities. At 23, I’ve already built
                 projects that bridge the gap between design and functionality using modern
                 web technologies. Dive into my journey and explore the work that
                 drives my ambition on my About Me page.
